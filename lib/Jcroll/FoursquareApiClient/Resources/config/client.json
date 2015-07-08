@@ -255,6 +255,11 @@
                     "description": "ID of venue to retrieve",
                     "location": "uri",
                     "required": true
+                },
+                "ll": {
+                "description": "Latitude/longitude from user",
+                "location": "query",
+                "required": false
                 }
             },
             "uri": "venues/{venue_id}"
@@ -489,7 +494,7 @@
                 "ll": {
                     "description": "Latitude and longitude of the user's location. (Required for query searches)",
                     "location": "query",
-                    "required": true
+                    "required": false
                 },
                 "llAcc": {
                     "description": "Accuracy of latitude and longitude, in meters. (Does not currently affect search results.)",
